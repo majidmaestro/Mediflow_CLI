@@ -49,7 +49,7 @@ def main():
     storage = StorageManager()
     data = storage.load_data()
 
-    patient_manager = PatientManager()
+    patient_manager = PatientManager(user_storage=storage)
     # TODO: once PatientManager's load/hydrate method is confirmed,
     # load existing patients from `data` into patient_manager here.
 
